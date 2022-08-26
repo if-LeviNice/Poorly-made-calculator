@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Carl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <img style="position: absolute" id="blob" src="">
+        <div id="display" class="view-container">
+            <div style="color:rgb(126, 126, 126); font-size:large;" id="exp_display"></div>
+            <div id="single_display"></div>
+        </div>
+        <div style="display: grid; grid-template-columns: auto auto">
+            <div class="number-container">
+                <div><button onclick="main_ops.numInput(1)">1</button></div>
+                <div><button onclick="main_ops.numInput(2)">2</button></div>
+                <div><button onclick="main_ops.numInput(3)">3</button></div>
+                <div><button onclick="main_ops.numInput(4)">4</button></div>
+                <div><button onclick="main_ops.numInput(5)">5</button></div>
+                <div><button onclick="main_ops.numInput(6)">6</button></div>
+                <div><button onclick="main_ops.numInput(7)">7</button></div>
+                <div><button onclick="main_ops.numInput(8)">8</button></div>
+                <div><button onclick="main_ops.numInput(9)">9</button></div>
+                <div><button id="add" onclick="thing()">?</button></div>
+                <div><button onclick="main_ops.numInput(0)">0</button></div>
+                <div><button onclick="main_ops.numInput('.')">.</button></div>
+            </div>
+            <div class="op-container">
+                <div><button style="background-color: orange; color: black" onclick="main_ops.reset()">C</button></div>
+                <div><button style="background-color: orange; color: black" onclick="main_ops.backspace()">AC</button></div>
+                <div><button onclick="main_ops.opInput('+')">+</button></div>
+                <div><button onclick="main_ops.opInput('-')">-</button></div>
+                <div><button onclick="main_ops.opInput('*')">*</button></div>
+                <div><button onclick="main_ops.opInput('/')">/</button></div>
+                <div><button onclick="main_ops.opInput('^')">&circ;</button></div>
+                <div><button onclick="main_ops.opInput('√')">&radic;</button></div>
+                <div><button style="background-color:rgb(100, 100, 100)" onclick="main_ops.calc()">=</button></div>
+            </div>
+        </div>
+    </div>
+    <audio display="none" src="audio/beep.mp3"></audio>
+    <script src="main.js"></script>
+    <script src="listeners.js"></script>
+    <script src="eventctrl.js"></script>
+    
+</body>
+
+</html>
